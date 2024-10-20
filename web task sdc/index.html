@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file if you have one -->
+</head>
+<body>
+    <div class="container">
+        <h1>Markdown Previewer</h1>
+        <div class="editor-preview">
+            <div class="editor">
+                <textarea id="markdown-input" placeholder="Enter your Markdown here...">
+# Welcome to Markdown Previewer!
+
+Type your Markdown in this pane.
+
+## Features:
+- Live preview
+- Responsive design
+- Clear and Download buttons
+
+**Bold text** and *italic text*
+
+[Link](https://example.com)
+
+![Image](https://via.placeholder.com/150)
+
+> Blockquote
+                </textarea>
+            </div>
+            <div class="preview" id="preview"></div>
+        </div>
+        <div class="buttons">
+            <button id="clear">Clear</button>
+            <button id="download">Download as HTML</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> <!-- Load marked.js -->
+    <script src="script.js"></script> <!-- Link to your external JavaScript file -->
+</body>
+</html>
